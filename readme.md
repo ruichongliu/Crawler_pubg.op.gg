@@ -3,7 +3,7 @@ In this file, I will talk you through the entire code I wrote for this web crawl
 
 Before the detailed introduction, check if you have **Python 3.6** installed on your machine, because I used **Python 3.6**. If you do have **Python 3.6**, you could move on to installing dependencies.
 
-```
+```shell
 pip install bs4
 pip install lxml
 pip install requests
@@ -41,7 +41,7 @@ In *Line 28*, remember to change that value to a real *op.gg* player ID. The rea
 - Check Request URL, the player ID is the string after *https://pubg.op.gg/api/users/*
 
 In *Line 40*, don't forget to change the executable_path to the path of your driver. After El Capitan, Mac users no longer have access to /usr/bin. You can put the driver under /usr/local/bin and change the executable_path like what I did. Also, you have to have **that browser installed** on your machine, which means if you don't have Firefox and you use *geckodriver*, you will receive a bunch of warnings! Also, if you do use Firefox, make the change as such.
-```
+```python
 driver = webdriver.Firefox(executable_path = "/usr/local/bin/geckodriver")
 ```
 
@@ -54,7 +54,7 @@ I want to explain why I have a try statement in *Line 46*. Some users they just 
 
 ###### reader.py
 The data I collect is quite primitive, so I also have a simple reader to summarize my data.
-```
+```python
 [userId, x['participant']['user']['nickname'], x['season'], x['server'], x['queue_size'], x['mode'], x['participant']['stats']['combat']['kda']['kills']]
 ```
 
@@ -129,7 +129,7 @@ I thank my co-workers here at Bullup Inc. for their generous help. I thank *op.g
 I know I said a lot. Today is the last business day of year 2017, and I finished this project on PUBG, my favorite game so far. To give something back to the world, I decided to make this repo public and write nice documentation for it XD.
 
 *The server is still running the result, I will post everything here once I have the final result. Result.csv is kinda made up by me now... lol*
-```
+```html
 <\2017>
 <2018>
 ```
