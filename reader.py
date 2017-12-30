@@ -7,6 +7,9 @@ def main(writer):
     writer.write("Reader: Reader Starts\n")
     print("Reader: Reader Starts")
     retVal = {}
+    """
+        Read data collected by scraper.py
+    """
     with open('data.csv', 'r', newline = '', encoding = 'UTF-8') as f:
         csvfile = csv.reader(f)
         for row in csvfile:
@@ -14,6 +17,10 @@ def main(writer):
                 retVal[row[-1]] = 1
             else:
                 retVal[row[-1]] += 1
+
+    """
+        Summarize data
+    """
     with open('result.csv', 'w', newline = '', encoding = 'UTF-8') as g:
         csvwriter = csv.writer(g)
         total = 0

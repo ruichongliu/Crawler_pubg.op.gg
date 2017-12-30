@@ -19,6 +19,11 @@ def main(writer, user0):
             try:
                 retVal = soup.body.div.section.find('div', 'content__wrapper--player-summary').find('div', 'content__inner').find('div', 'player-summary').div.div.attrs['data-user_id']
             except:
+                """
+                    * Also, give it a real player code.
+                    * This is only a placeholder to handle errors.
+                    * If it happens to be real or yours, I apologize for that.
+                """
                 retVal = "59fd962cab1fff00019e0759"
             return retVal
         return list(map(f, userList))
@@ -28,7 +33,10 @@ def main(writer, user0):
             print("Finder: Collecting Friends of User %s..." % (user))
             writer.write("Finder: Collecting Friends of User %s...\n" % (user))
 
-            driver = webdriver.Chrome(executable_path="/usr/local/bin/chromedriver")
+            """
+                Change the executable_path to be the path of your driver.
+            """
+            driver = webdriver.Chrome(executable_path = "/usr/local/bin/chromedriver")
             driver.get("https://pubg.op.gg/user/%s?server=as" % (user))
 
             xpath = ["/html/body/div[@class='pubg pubg--player']/section[@class='container']/div[@class='content__wrapper']/div[@class='content__inner']/div[@class='overview']/div[@class='overview__row']/div[@class='overview__column overview__column--right']/div[2]/div/ul[@class='total-played-game__list']/li[@class='total-played-game__item'][1]/div[@class='played-game ']/div[@class='played-game__summary']/div[@class='played-game__column played-game__column--btn']/button[@class='sp__toggle played-game__btn played-game__btn--detail']",\
