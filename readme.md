@@ -117,9 +117,29 @@ Player ID                   Username    Season      Server  Queue_Size Mode Kill
 You should see summarization as such:
 ```
 kills   Frequency   Relative Frequency
-0	      567	    0.586349535
-1	      200	    0.206825233
-2	      137	    0.141675284
+0	158768	0.574224839
+1	62972	0.227754249
+2	27958	0.101117215
+3	13143	0.047535001
+5	3330	0.012043792
+6	1776	0.006423356
+4	6399	0.02314361
+8	515	0.001862628
+7	945	0.003417833
+10	175	0.000632932
+12	45	0.000162754
+9	285	0.001030775
+11	91	0.000329125
+14	26	9.40E-05
+26	1	3.62E-06
+15	9	3.26E-05
+13	35	0.000126586
+16	4	1.45E-05
+18	3	1.09E-05
+17	7	2.53E-05
+29	1	3.62E-06
+20	1	3.62E-06
+19	2	7.23E-06
 ...
 ```
 ## Acknowledgement
@@ -128,7 +148,7 @@ I thank my co-workers here at Bullup Inc. for their generous help. I thank *op.g
 ## Footnote
 I know I said a lot. Today is the last business day of year 2017, and I finished this project on PUBG, my favorite game so far. To give something back to the world, I decided to make this repo public and write nice documentation for it XD.
 
-*The server is still running the result, I will post everything here once I have the final result. Result.csv is kinda made up by me now... lol*
+*On AWS, it took me 3700 seconds to run finder with two degrees of userMap, 15435 seconds to run scraper, 0 seconds to run reader.*
 ```html
 <\2017>
 <2018>
