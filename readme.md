@@ -58,11 +58,77 @@ The data I collect is quite primitive, so I also have a simple reader to summari
 [userId, x['participant']['user']['nickname'], x['season'], x['server'], x['queue_size'], x['mode'], x['participant']['stats']['combat']['kda']['kills']]
 ```
 
+###### userIdList.txt
+The following files might be messy on Windows machines. If you do have a \*nix machine, you should see something like this in this file.
+```
+5a3befa88676120001104e8d
+5a307bafc284c1000169e7db
+59feb54368c1ea00019c056b
+5a0c5e93f0eb7800013cd191
+...
+```
+
+###### log.txt
+Do you still remember that I talked about Player #unknown? You can always find something interesting in the log file. The last message I present in Finder happens to be #unknown. The overall log should be like this.
+```
+Master: START--START--START--START--START
+Finder: Starting with User YechenDetoxic...
+Finder: Collecting Friends of User YechenDetoxic...
+Finder: Translating User kanchao_ge...
+Finder: Translating User QingFeng141...
+Finder: Translating User Clearloveccp...
+Finder: Translating User 980010...
+Finder: Translating User with164...
+Finder: Translating User E-RomanA...
+Finder: Translating User #unknown...
+...
+
+Scraper: Scraper Starts
+Scraper: Working on User 5a0c5e93f0eb7800013cd191
+Scraper: Working on User 5a0bed2905279f00011d10f5
+Scraper: Working on User 5a2e49d4e358310001185431
+Scraper: Working on User 59fd962cab1fff00019e0759
+Scraper: Working on User 59fdb0a699392b0001608809
+Scraper: Working on User 59fd958031e4c1000157b475
+Scraper: Working on User 59fe352cb503ad0001f16526
+...
+
+Reader: Reader Starts
+...
+
+Master: DONE--DONE--DONE--DONE--DONE
+```
+
+###### data.csv
+You should see data collected in such format:
+```
+Player ID                   Username    Season      Server  Queue_Size Mode Kills
+59fd96dddfa2830001fb24aa	Kev666--	2018-01	    sea	1	    tpp	9
+59fd96dddfa2830001fb24aa	Kev666--	2018-01	    sea	1	    tpp	0
+59fd96dddfa2830001fb24aa	Kev666--	2018-01	    sea	1	    tpp	0
+59fd96dddfa2830001fb24aa	Kev666--	2018-01	    sea	1	    tpp	0
+59fd96dddfa2830001fb24aa	Kev666--	2017-pre6	  sea	1 	   tpp	1
+59fd96dddfa2830001fb24aa	Kev666--	2017-pre6	  sea	1	    tpp	3
+59fd96dddfa2830001fb24aa	Kev666--	2017-pre5	  sea	1	    tpp	0
+...
+```
+
+###### result.csv
+You should see summarization as such:
+```
+kills   Frequency   Relative Frequency
+0	      567	    0.586349535
+1	      200	    0.206825233
+2	      137	    0.141675284
+...
+```
 ## Acknowledgement
-I thank *op.gg* for not banning my IP, because as you can see, I did not set up proxy. All credits go to *op.gg*, because I am using their backdoor APIs and database and I feel obligated to say so.
+I thank my co-workers here at Bullup Inc. for their generous help. I thank *op.gg* for not banning my IP, because as you can see, I did not set up proxy. All credits go to *op.gg*, because I am using their backdoor APIs and database and I feel obligated to say so.
 
 ## Footnote
-I know I said a lot. Today is the last business day of year 2017, and I finished this project on PUBG, my favorite game so far. I thank my co-workers here at Bullup Inc. for their generous help. To give something back to the world, I decided to make this repo public and write nice documentation for it XD.
+I know I said a lot. Today is the last business day of year 2017, and I finished this project on PUBG, my favorite game so far. To give something back to the world, I decided to make this repo public and write nice documentation for it XD.
+
+*The server is still running the result, I will post everything here once I have the final result. Result.csv is kinda made up by me now... lol*
 ```
 <\2017>
 <2018>
