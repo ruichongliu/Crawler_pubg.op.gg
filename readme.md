@@ -82,7 +82,9 @@ Finder: Translating User with164...
 Finder: Translating User E-RomanA...
 Finder: Translating User #unknown...
 ...
-
+Finder: DONE!!
+Time Used: 3866 seconds
+User Captured: 4941
 Scraper: Scraper Starts
 Scraper: Working on User 5a0c5e93f0eb7800013cd191
 Scraper: Working on User 5a0bed2905279f00011d10f5
@@ -92,10 +94,11 @@ Scraper: Working on User 59fdb0a699392b0001608809
 Scraper: Working on User 59fd958031e4c1000157b475
 Scraper: Working on User 59fe352cb503ad0001f16526
 ...
-
+Scraper: DONE!!
+Time Used: 15435 seconds
 Reader: Reader Starts
-...
-
+Reader: DONE!!
+Time Used: 0 seconds
 Master: DONE--DONE--DONE--DONE--DONE
 ```
 
@@ -148,7 +151,7 @@ I thank my co-workers here at Bullup Inc. for their generous help. I thank *op.g
 ## Footnote
 I know I said a lot. Today is the last business day of year 2017, and I finished this project on PUBG, my favorite game so far. To give something back to the world, I decided to make this repo public and write nice documentation for it XD.
 
-*On AWS, it took me 3700 seconds to run finder with two degrees of userMap, 15435 seconds to run scraper, 0 seconds to run reader.*
+*On AWS, it took me 3866 seconds to run finder with two degrees of userMap, 15435 seconds to run scraper, 0 seconds to run reader.*
 ```html
 <\2017>
 <2018>
