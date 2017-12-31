@@ -31,7 +31,7 @@ By calling *userMap* twice, I was able to capture 4970 distinct users, and it to
 
 Let's talk more on documentation. In *Line 19* and *Line 42*, the query variable server is set to *as*. You can change it to other servers if you feel like doing that. Since the companying I am working for is a company focused on Greater China, most of the server settings are Asia or Southeast Asia or Japan/Korea.
 
-In *Line 28*, remember to change that value to a real *op.gg* player ID. The reason I have this line is that sometimes a player with name **#unknown** appears~~, due to their rubbish servers~~.  I will tell you how to find a player ID now.
+In *Line 28*, remember to change that value to a real *op.gg* player ID. The reason I have this line is that sometimes a player with name **#unknown** appears ~~, due to their rubbish servers~~ .  I will tell you how to find a player ID now.
 - Go to *[pubg.op.gg](https://pubg.op.gg)*
 - Search a real PUBG player username
 - Wait for the whole webpage to be fully loaded
