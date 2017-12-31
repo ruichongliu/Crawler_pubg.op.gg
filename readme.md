@@ -1,5 +1,5 @@
 # Web Crawler for *pubg.op.gg*
-In this file, I will talk you through the entire code I wrote for this web crawler. I don't have much documentation within each file because I find most of them tedious and straightforward if you have done any scraping. Therefore, I will introduce the idea of this project and clarify some code in file. If after reading this file, the whole thing still doesn't make sense to you, don't hesitate to leave a comment below or somewhere else in this repo.
+In this file, I will talk you through the entire code I wrote for this web crawler. I don't have much documentation within each file because I find most of them tedious and straightforward if you have done any scraping. Therefore, I will introduce the idea of this project and clarify some code in this file. If after reading this file, the whole thing still doesn't make sense to you, don't hesitate to leave a comment below or somewhere else in this repo.
 
 Before the detailed introduction, check if you have **Python 3.6** installed on your machine, because I used **Python 3.6**. If you do have **Python 3.6**, you could move on to installing dependencies.
 
