@@ -55,11 +55,29 @@ I want to explain why I have a try statement in *Line 46*. Some users they just 
 ###### reader.py
 The data I collect is quite primitive, so I also have a simple reader to summarize my data.
 ```python
-[userId, x['participant']['user']['nickname'], x['season'], x['server'], x['queue_size'], x['mode'], x['participant']['stats']['combat']['kda']['kills']]
+[userId, x['participant']['user']['nickname'], x['season'], x['server'], 
+x['queue_size'], x['mode'], x['participant']['stats']['combat']['kda']['kills']]
 ```
 If you demand something more complicated than what I did in my project, I will talk you through here. Recall that I talked about Request URL in the finder section. If you visit a [Request URL](https://pubg.op.gg/api/users/59fe36049e49c400014a68eb/matches/recent?season=2018-01&server=na&queue_size=&mode=tpp&after=100), you will see a JSON object like this.
 ```JSON
-{"params":{"server":"na","season":null,"queue_size":0,"mode":"tpp"},"matches":{"summary":{"matches_cnt":20,"win_matches_cnt":1,"topten_matches_cnt":7,"ranks_avg":16.95,"ranks_list":[6,24,18,43,42,14,11,16,3,1,29,7,19,18,2,12,9,2,16,47],"kills_avg":2,"deaths_avg":0.95,"kills_max":6,"damage_avg":230.261890915,"time_survived_avg":964.2993499999999,"modes":{"2":{"matches_cnt":5,"win_matches_cnt":0,"topten_matches_cnt":1,"rating_delta_sum":4.185349880000004},"4":{"matches_cnt":13,"win_matches_cnt":0,"topten_matches_cnt":5,"rating_delta_sum":10.264028235999994},"1":{"matches_cnt":2,"win_matches_cnt":1,"topten_matches_cnt":1,"rating_delta_sum":151.97761028000002}}},"items":[{"season":"2017-pre6","server":"na","queue_size":2,"mode":"tpp","started_at":"2017-12-06T03:27:29+0000","total_rank":42,"offset":101,"match_id":"2U4GBNA0YmnSRjFPiSEp6LaN-bpuG8kRbg6Rdt5PZpPKmHyludByUMHwbLTOzeEO","participant":{"_id":"5a276bd059e73b0001e5b828","user":{"nickname":"LexWynnZzWw","profile_url":"https:\/\/pubg.op.gg\/user\/LexWynnZzWw?server=na"},"stats":{"rank":6,"rating_delta":40.009836480000004,"combat":{"time_survived":1802.317,"vehicle_destroys":0,"win_place":6,"kill_place":4,"heals":5,"weapon_acquired":9,"boosts":4,"death_type":"byplayer","most_damage":0,"kda":{"kills":4,"assists":2,"kill_steaks":1,"road_kills":0,"team_kills":0,"headshot_kills":2,"longest_kill":49.3916779},"distance_traveled":{"walk_distance":2522.22559,"ride_distance":3938.64038},"damage":{"damage_dealt":482.832336},"dbno":{"knock_downs":2,"revives":0}}}},"team":{"_id":24,"stats":{"rank":6},"participants":[]}}
+{"params":{"server":"na","season":null,"queue_size":0,"mode":"tpp"},
+"matches":{"summary":{"matches_cnt":20,"win_matches_cnt":1,"topten_matches_cnt":7,"ranks_avg":16.95,
+"ranks_list":[6,24,18,43,42,14,11,16,3,1,29,7,19,18,2,12,9,2,16,47],
+"kills_avg":2,"deaths_avg":0.95,"kills_max":6,"damage_avg":230.261890915,
+"time_survived_avg":964.2993499999999,"modes":{"2":{"matches_cnt":5,"win_matches_cnt":0,"topten_matches_cnt":1,
+"rating_delta_sum":4.185349880000004},"4":{"matches_cnt":13,"win_matches_cnt":0,"topten_matches_cnt":5,
+"rating_delta_sum":10.264028235999994},"1":{"matches_cnt":2,"win_matches_cnt":1,"topten_matches_cnt":1,
+"rating_delta_sum":151.97761028000002}}},"items":[{"season":"2017-pre6","server":"na","queue_size":2,"mode":"tpp",
+"started_at":"2017-12-06T03:27:29+0000","total_rank":42,"offset":101,
+"match_id":"2U4GBNA0YmnSRjFPiSEp6LaN-bpuG8kRbg6Rdt5PZpPKmHyludByUMHwbLTOzeEO",
+"participant":{"_id":"5a276bd059e73b0001e5b828","user":{"nickname":"LexWynnZzWw",
+"profile_url":"https:\/\/pubg.op.gg\/user\/LexWynnZzWw?server=na"},"stats":{"rank":6,
+"rating_delta":40.009836480000004,"combat":{"time_survived":1802.317,"vehicle_destroys":0,
+"win_place":6,"kill_place":4,"heals":5,"weapon_acquired":9,"boosts":4,"death_type":"byplayer",
+"most_damage":0,"kda":{"kills":4,"assists":2,"kill_steaks":1,"road_kills":0,"team_kills":0,"headshot_kills":2,
+"longest_kill":49.3916779},"distance_traveled":{"walk_distance":2522.22559,"ride_distance":3938.64038},
+"damage":{"damage_dealt":482.832336},"dbno":{"knock_downs":2,"revives":0}}}},
+"team":{"_id":24,"stats":{"rank":6},"participants":[]}}
 ...
 ]}}
 ```
