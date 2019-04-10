@@ -184,6 +184,6 @@ I know I said a lot. Today is the last business day of year 2017, and I finished
 
 *On AWS, it took me 3866 seconds to run finder with two degrees of userMap, 15435 seconds to run scraper, 0 seconds to run reader.*
 ```html
-<\2017>
+</2017>
 <2018>
 ```
